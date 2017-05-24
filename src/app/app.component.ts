@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { customers } from './customers';
 
 @Component({
   selector: 'app-root',
@@ -6,9 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'app works!';
-
-  onButtonClick() {
-      this.title = 'Hello from Kendo UI!';
-  }
+  public gridData: any[] = customers;
 }
